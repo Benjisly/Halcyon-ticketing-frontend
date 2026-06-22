@@ -246,7 +246,7 @@ function SubmitForm() {
         <h2 style={{fontSize:20,fontWeight:600,margin:'0 0 8px'}}>Request submitted!</h2>
         {ticketId&&<p style={{fontSize:13,color:'#888',margin:'0 0 4px'}}>Ticket ID: <strong>{ticketId}</strong></p>}
         <p style={{fontSize:14,color:'#555',margin:'0 0 1.5rem',lineHeight:1.6}}>Benjamin has been notified and will get back to you.</p>
-        <button onClick={()=>{setDone(false);setForm({title:'',desc:'',project:'',priority:'Medium',due:'',submittedBy:'',submitterEmail:'']);}}
+        <button onClick={()=>{setDone(false);setForm({title:'',desc:'',project:'',priority:'Medium',due:'',submittedBy:'',submitterEmail:''});}}
           style={{fontSize:13,padding:'7px 14px',borderRadius:8,border:'0.5px solid #d5d5d3',background:'#fff',cursor:'pointer'}}>
           Submit another
         </button>
