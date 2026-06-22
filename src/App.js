@@ -236,7 +236,7 @@ function Dashboard({ onLogout }) {
               </div>
             </div>
             <div style={{display:'flex',gap:8,justifyContent:'flex-end',marginTop:'1rem',paddingTop:'0.75rem',borderTop:'0.5px solid #e5e5e3'}}>
-              {modal !== 'new' && <button onClick={deleteTicket} style={{fontSize:13,padding:'7px 14px',borderRadius:8,border:'0.5px solid #F09595',background:'#fff',color:'#A32D2D',cursor:'pointer'}}>Delete</button>}
+
               <button onClick={() => setModal(null)} style={{fontSize:13,padding:'7px 14px',borderRadius:8,border:'0.5px solid #d5d5d3',background:'#fff',cursor:'pointer'}}>Cancel</button>
               <button onClick={saveTicket} disabled={saving} style={{fontSize:13,padding:'7px 14px',borderRadius:8,border:'none',background:'#CC1818',color:'#fff',fontWeight:600,cursor:'pointer'}}>{saving?'Saving...':'Save'}</button>
             </div>
@@ -254,7 +254,7 @@ function SubmitForm() {
   const [done, setDone] = useState(false);
   const [ticketId, setTicketId] = useState('');
   const [error, setError] = useState('');
-  var PROJECTS = ['Halcyon MH — General','IT / Systems','Admin / HR','Showroom','Workshop','Velor Wear','Other'];
+  var PROJECTS = ['Halcyon MH — General','IT / Systems','Admin / HR','Stores','Showroom','Workshop','Other'];
 
   function set(k, v) { setForm(function(f) { return Object.assign({}, f, { [k]: v }); }); }
 
